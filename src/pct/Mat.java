@@ -57,8 +57,32 @@ public class Mat {
                     System.out.printf("\n\n %d! = %f\n\n", n, fat);                    
                     break;
                 case 2:
+                    //Declaração de váriaveis 
+                    int[] x = new int [4];
+                    double soma = 0, media;
+                    
                     //Média
+                    
                     System.out.println("\n\t\t\t Média\n");
+                    
+                    //Entrada
+                    System.out.print("Informe x1: ");
+                    x[0]= entrada.nextInt();
+                    System.out.print("Informe x2: ");
+                    x[1]= entrada.nextInt();
+                     System.out.print("Informe x3");
+                    x[2]= entrada.nextInt();
+                     System.out.print("Informe x4");
+                    x[3]= entrada.nextInt();
+                    
+                    
+                    //Processamento
+                    soma = x[0] +  x[1] + x[2] + x[3];
+                    media =  soma/4;
+                    
+                    System.out.printf("\n A média de  %d e %d e %d e %d é  %.2f.\n\n\n ", x[0], x[1], x[3], media);
+                    
+                    
                     break;
                 case 3:
                     //Sair
